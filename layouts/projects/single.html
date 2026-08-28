@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<article class="project">
+
+    <a href="/#projetos" class="back">
+        ← Voltar para projetos
+    </a>
+
+    <header class="project-header">
+
+        <p class="eyebrow">PROJETO</p>
+
+        <h1>{{ .Title }}</h1>
+
+        <p class="subtitle">
+            {{ .Description }}
+        </p>
+
+    </header>
+
+    <div class="project-content">
+
+        {{ .Content }}
+
+    </div>
+
+</article>
+
+{{ end }}

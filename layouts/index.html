@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<section class="hero">
+
+    <p class="eyebrow">PYTHON · DATA · FINANCE · OPTIMIZATION</p>
+
+    <h1>Gabriel Negreiros</h1>
+
+    <p class="subtitle">
+        Transformando problemas reais em soluções utilizando
+        programação, dados e automação.
+    </p>
+
+    <div class="links">
+        <a href="https://github.com/SEU-USUARIO">GitHub</a>
+        <a href="https://linkedin.com/in/SEU-USUARIO">LinkedIn</a>
+        <a href="/files/Gabriel_Negreiros_CV.pdf">Currículo</a>
+    </div>
+
+</section>
+
+
+<section id="sobre">
+
+    <h2>Sobre</h2>
+
+    <p>
+        [Seu texto de apresentação.]
+    </p>
+
+</section>
+
+
+<section id="projetos">
+
+    <h2>Projetos</h2>
+
+    <div class="projects">
+
+        {{ range where .Site.RegularPages "Section" "projects" }}
+
+        <a class="project-card" href="{{ .RelPermalink }}">
+
+            <h3>{{ .Title }}</h3>
+
+            <p>{{ .Description }}</p>
+
+            <span>Ver projeto →</span>
+
+        </a>
+
+        {{ end }}
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>Tecnologias</h2>
+
+    <div class="skills">
+
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>SQL</span>
+        <span>SQLite</span>
+        <span>NumPy</span>
+        <span>Matplotlib</span>
+        <span>VBA</span>
+        <span>Microsoft Access</span>
+        <span>Power BI</span>
+        <span>Git</span>
+
+    </div>
+
+</section>
+
+
+<section id="contato">
+
+    <h2>Contato</h2>
+
+    <p>
+        Interessado em tecnologia, dados, inteligência artificial
+        e mercado financeiro.
+    </p>
+
+</section>
+
+{{ end }}

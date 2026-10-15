@@ -12,23 +12,22 @@
         {{ end }}
     </title>
 
-    {{ $style := resources.Get "css/main.css" }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
 
 <body>
 
 <header>
     <nav>
-        <a href="/">Gabriel Negreiros</a>
+        <a href="{{ site.Home.RelPermalink }}">Gabriel Negreiros</a>
 
         <div>
-            <a href="/#sobre">Sobre</a>
-            <a href="/#experiencias">Experiências</a>
-            <a href="/#projetos">Projetos</a>
-            <a href="/#formacao">Formação acadêmica</a>
-            <a href="/#competencias">Ferramentas</a>
-            <a href="/#contato">Contato</a>
+            <a href="{{ site.Home.RelPermalink }}#sobre">Sobre</a>
+            <a href="{{ site.Home.RelPermalink }}#experiencias">Experiências</a>
+            <a href="{{ site.Home.RelPermalink }}#projetos">Projetos</a>
+            <a href="{{ site.Home.RelPermalink }}#formacao">Formação acadêmica</a>
+            <a href="{{ site.Home.RelPermalink }}#competencias">Ferramentas</a>
+            <a href="{{ site.Home.RelPermalink }}#contato">Contato</a>
         </div>
     </nav>
 </header>

@@ -1,5 +1,5 @@
 ---
-title: "RCPSP Optimization"
+title: "RCPSP"
 description: "Modelagem e otimização de projetos com recursos limitados."
 date: 2026-08-27
 draft: false
@@ -20,23 +20,13 @@ cronogramas eficientes respeitando as restrições do problema.
 ## Tecnologias
 
 - Python
-- Mathematical Optimization
-- Mixed Integer Programming
-- Constraint Programming
-- Heuristics
+- Otimização matemática
+- Programação inteira
+- Programação por restrição
+- Heurísticas
 
-## Modelagem
-
-[Explicação simplificada do modelo.]
-
-## Resultados
-
-[Gráficos / Gantt / resultados.]
-
-## O que aprendi
+## O que desenvolvi
 
 - Modelagem matemática
 - Problemas de otimização
-- Constraint Programming
-- Integer Programming
-- Heurísticas
+- Teoria de grafos

@@ -1,5 +1,5 @@
 ---
-title: "Commercial Proposal System"
+title: "Proposta Comercial via Access"
 description: "Sistema para gerenciamento e geração automatizada de propostas comerciais."
 date: 2026-08-27
 draft: false
@@ -7,8 +7,8 @@ draft: false
 
 ## O problema
 
-O processo de criação e gerenciamento de propostas comerciais
-possuía tarefas manuais que poderiam ser automatizadas.
+O processo de criação e gerenciamento de propostas comerciais 
+possuía tarefas manuais que poderiam ser automatizadas. Além disso, eram comuns erros de preenchimento de campos e validação de dados.
 
 ## A solução
 
@@ -24,8 +24,6 @@ o processo de criação, gerenciamento e geração das propostas.
 
 ## Funcionalidades
 
-- Cadastro de clientes
-- Cadastro de produtos
 - Gerenciamento de propostas
 - Validação de CPF/CNPJ
 - Integração com APIs
@@ -34,7 +32,6 @@ o processo de criação, gerenciamento e geração das propostas.
 
 ## O que aprendi
 
-- Modelagem relacional
 - Desenvolvimento de aplicações
 - Automação com VBA
 - Integração com APIs

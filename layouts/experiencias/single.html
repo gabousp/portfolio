@@ -1,0 +1,39 @@
+
+{{ define "main" }}
+
+<article class="experience-page">
+
+    <a class="back-link" href="/#experiencias">
+        ← Voltar às experiências
+    </a>
+
+    <header class="page-header">
+        <p class="eyebrow">EXPERIÊNCIA</p>
+
+        <h1>{{ .Title }}</h1>
+
+        {{ with .Params.organizacao }}
+        <p class="experience-org">{{ . }}</p>
+        {{ end }}
+
+        {{ with .Params.periodo }}
+        <p class="experience-period">{{ . }}</p>
+        {{ end }}
+
+        {{ with .Description }}
+        <p class="subtitle">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    <div class="page-content">
+        {{ .Content }}
+    </div>
+
+    <footer class="page-footer">
+        <a href="/#experiencias">← Voltar às experiências</a>
+        <a href="/#projetos">Ver projetos →</a>
+    </footer>
+
+</article>
+
+{{ end }}

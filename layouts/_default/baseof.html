@@ -12,22 +12,23 @@
         {{ end }}
     </title>
 
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 </head>
 
 <body>
 
 <header>
     <nav>
-        <a href="{{ site.Home.RelPermalink }}">Gabriel Negreiros</a>
+        <a href="{{ "/" | relURL }}">Gabriel Negreiros</a>
 
         <div>
-            <a href="{{ site.Home.RelPermalink }}#sobre">Sobre</a>
-            <a href="{{ site.Home.RelPermalink }}#experiencias">Experiências</a>
-            <a href="{{ site.Home.RelPermalink }}#projetos">Projetos</a>
-            <a href="{{ site.Home.RelPermalink }}#formacao">Formação acadêmica</a>
-            <a href="{{ site.Home.RelPermalink }}#competencias">Ferramentas</a>
-            <a href="{{ site.Home.RelPermalink }}#contato">Contato</a>
+            <a href="{{ "/" | relURL }}#sobre">Sobre</a>
+            <a href="{{ "/" | relURL }}#experiencias">Experiências</a>
+            <a href="{{ "/" | relURL }}#projetos">Projetos</a>
+            <a href="{{ "/" | relURL }}#formacao">Formação acadêmica</a>
+            <a href="{{ "/" | relURL }}#competencias">Ferramentas</a>
+            <a href="{{ "/" | relURL }}#contato">Contato</a>
         </div>
     </nav>
 </header>
